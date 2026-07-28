@@ -87,6 +87,49 @@
                 width: 100%;
                 font-size: 1.5em;
             }
+
+            table.tabla-jema,
+            table.tabla-jema thead,
+            table.tabla-jema tbody,
+            table.tabla-jema th,
+            table.tabla-jema td,
+            table.tabla-jema tr {
+                display: block;
+            }
+
+            table.tabla-jema thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            table.tabla-jema tr {
+                border: 1px solid #ddd;
+                margin-bottom: 14px;
+            }
+
+            table.tabla-jema td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding: 8px 10px 8px 42%;
+                min-height: 2.2em;
+                overflow-wrap: anywhere;
+            }
+
+            table.tabla-jema td:before {
+                position: absolute;
+                left: 10px;
+                width: 34%;
+                padding-right: 8px;
+                font-weight: bold;
+                white-space: normal;
+            }
+
+            table.tabla-jema td:nth-of-type(1):before { content: "Fecha"; }
+            table.tabla-jema td:nth-of-type(2):before { content: "Ponente"; }
+            table.tabla-jema td:nth-of-type(3):before { content: "Institución"; }
+            table.tabla-jema td:nth-of-type(4):before { content: "Título"; }
         }
 
     </style>
@@ -388,7 +431,7 @@ Presidente de SeMA
 </p>
 
 <figure style="text-align: center">
-    <img src="https://github.com/BoletinSEMA/boletin37/blob/main/img/5.jpg?raw=True" alt="Imagen del Prof. Juan Luis Vázquez"/>
+    <img src="https://github.com/BoletinSEMA/boletin37/blob/main/img/resena5.jpg?raw=True" alt="Imagen del Prof. Juan Luis Vázquez"/>
     <figcaption style="text-align: center;">Prof. Juan Luis Vázquez</figcaption>
 </figure>
 
@@ -601,7 +644,7 @@ Presidente de SeMA
 </p>
 
 <figure style="text-align: center;">
-    <img src="https://github.com/BoletinSEMA/boletin37/blob/main/img/noticia1_1_n3.jpg?raw=True" alt="Foto de Antonio J. Fernández"/>
+    <img src="https://github.com/BoletinSEMA/boletin37/blob/main/img/noticia1.jpg?raw=True" alt="Foto de Antonio J. Fernández"/>
     <figcaption style="text-align: center;">Antonio J. Fernández</figcaption>
 </figure>
 
@@ -1042,5 +1085,10 @@ Para los socios de reciprocidad es necesario adjuntar el justificante de miembro
 <ul>
 	<li><b>Editor jefe:</b> Dionisio F. Yáñez (UV, <a href="mailto:dionisio.yanez@uv.es">dionisio.yanez@uv.es</a>).</li>
 	<li><b>Director de edición del boletín:</b> Daniel Acosta (UCA, <a href="mailto:daniel.acosta@uca.es">daniel.acosta@uca.es</a>).</li>
-	<li><b>Equipo editorial:</b> Mari Carmen Martí (UV, <a href="mailto:Maria.C.Marti@uv.es">Maria.C.Marti@uv.es</a>), Francisco Morillas (UV, <a href="mailto:francisco.morillas@uv.es">francisco.morillas@uv.es</a>), Lourdes Tello (UPM, <a href="mailto:l.tello@upm.es">l.tello@upm.es</a>).</li>
+	<li><b>Equipo editorial:</b>
+        <ul style="padding-left: 50px;">
+            <li>Mari Carmen Martí (UV, <a href="mailto:Maria.C.Marti@uv.es">Maria.C.Marti@uv.es</a>).</li>
+            <li>Francisco Morillas (UV, <a href="mailto:francisco.morillas@uv.es">francisco.morillas@uv.es</a>).</li>
+            <li>Lourdes Tello (UPM, <a href="mailto:l.tello@upm.es">l.tello@upm.es</a>).</li>
+        </ul>
 </ul>
